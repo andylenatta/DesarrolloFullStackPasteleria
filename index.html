@@ -17,6 +17,7 @@
 <li><a href="#">Personalizar</a></li>
 <li><a href="#">Pedidos</a></li>
 <li><a href="#">Contacto</a></li>
+<li><a href="#" id="cart-btn">🛒 <span id="cart-count">0</span></a></li>
 </ul>
 </nav>
 </header>
@@ -35,6 +36,7 @@
       <h4>Torta de Chocolate</h4>
       <p>Capas de ganache y avellanas, personalizable con mensajes.</p>
       <p class="precio">$45.000 CLP</p>
+      <button class="add-to-cart" data-name="Torta de Chocolate" data-price="45000">Agregar al carrito</button>
     </div>
 
     <div class="card">
@@ -42,13 +44,15 @@
       <h4>Torta de Frutas</h4>
       <p>Frutas frescas, crema chantilly y bizcocho de vainilla.</p>
       <p class="precio">$50.000 CLP</p>
+      <button class="add-to-cart" data-name="Torta de Chocolate" data-price="45000">Agregar al carrito</button>
     </div>
 
     <div class="card">
       <img src="imagenes/torta_vainilla.png" alt="Torta Circular de Vainilla">
       <h4>Torta Circular de Vainilla</h4>
-      <p>Ideal para cualquier celebración.</p>
+      <p>Torta de vainilla, Ideal para cualquier celebración.</p>
       <p class="precio">$40.000 CLP</p>
+      <button class="add-to-cart" data-name="Torta de Chocolate" data-price="45000">Agregar al carrito</button>
     </div>
   </div>
 </section>
@@ -68,5 +72,19 @@
 <a href="#">Twitter</a>
 </div>
 </footer>
+
+<div id="cart-modal" class="cart-modal">
+  <div class="cart-content">
+    <h3>🛒 Tu Carrito</h3>
+    <ul id="cart-items"></ul>
+    <p>Total: $<span id="cart-total">0</span> CLP</p>
+    <button id="checkout">Finalizar compra</button>
+    <button id="close-cart">Cerrar</button>
+  </div>
+</div>
+
+
+<script src="script.js"></script>
+
 </body>
 </html>
