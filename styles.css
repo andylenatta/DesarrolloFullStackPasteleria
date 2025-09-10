@@ -260,3 +260,7 @@ text-decoration: underline;
   background: #FF6F61;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
